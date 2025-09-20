@@ -1,0 +1,5 @@
+"Please analyze both the video frames and the following text to determine if they contain hateful or offensive content. "
+        "If contain hateful/offensive content, please return 1; "
+        "if not, please return 0. "
+        "Just return 1 or 0, no other words. "
+        f"Here is the text: \n\n{text}"
