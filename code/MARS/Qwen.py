@@ -254,7 +254,7 @@ Return ONLY valid JSON with key "final_decision" containing the above structure"
                     "image": img
                 })
 
-            # 添加文本prompt
+            # Add text prompt
             messages[0]["content"].append({
                 "type": "text",
                 "text": prompt
@@ -620,13 +620,13 @@ def is_gpu_free(gpu_ids):
 
 
 def main():
-    # GPU设置
+    
     GPU_ID = "1"
     os.environ["CUDA_VISIBLE_DEVICES"] = GPU_ID
     os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
     gpu_list = [gid.strip() for gid in GPU_ID.split(",")]
 
-    # 检查GPU
+    
     if not is_gpu_free(gpu_list):
         print(f"[FATAL] GPU（{GPU_ID}）currently occupied; programme terminated.")
         sys.exit(1)
@@ -682,4 +682,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
