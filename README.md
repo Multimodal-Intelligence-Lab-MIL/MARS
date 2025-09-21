@@ -22,7 +22,8 @@ Both datasets can be obtained from their respective GitHub repositories.
 ```
 .
 ├── code/        # Inference code
-├── result/      # The compressed package contains the inference results JSON file, <br> five-fold dataset split, and performance evaluation script.
+├── result/      # The compressed package contains the inference results JSON file,
+                 # five-fold dataset split, and performance evaluation script.
 └── README.md    # Documentation
 ```
 
