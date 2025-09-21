@@ -5,8 +5,8 @@ This repository accompanies the paper *“Training-Free and Interpretable Hatefu
 
 ## Datasets
 
-* [HateMM](https://github.com/hate-speech-datasets/HateMM)
-* [MultiHateClip (MHC)](https://github.com/hate-speech-datasets/MultiHateClip)
+* [HateMM](https://github.com/hate-alert/HateMM)
+* [MultiHateClip (MHC)](https://github.com/Social-AI-Studio/MultiHateClip)
 
 Both datasets can be obtained from their respective GitHub repositories.
 
