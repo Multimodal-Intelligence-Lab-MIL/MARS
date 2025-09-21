@@ -191,7 +191,7 @@ def clean_json_response(response_text: str) -> tuple:
         return parsed_json, True
 
     except json.JSONDecodeError as e:
-        print(f"JSON解析失败: {e}")
+        print(f"JSON failed: {e}")
         return response_text, False
 
 
@@ -599,4 +599,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
