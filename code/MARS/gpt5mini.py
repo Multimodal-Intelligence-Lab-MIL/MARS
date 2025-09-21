@@ -182,7 +182,7 @@ def classify_multimodal_content_single_turn(video_key, text, client, video_folde
     frames_paths = get_frames_from_folder(video_folder, num_frames)
 
     if not frames_paths:
-        print(f"警告: 没有找到视频 {video_key} 的图片帧")
+        print(f"Warning: No image frames found for video {video_key}")
         return None
 
     text = clean_text(text)
@@ -257,7 +257,7 @@ def classify_multimodal_content_single_turn(video_key, text, client, video_folde
 
                     return {"error": "api_exception", "error_message": error_message}
 
-    # 如果所有重试都失败了
+    
     print(f"[Failure] All retries have failed. Sample: {video_key}, Turn: {turn}")
     return {"error": "all_retries_failed", "error_message": "All failed"}
 
@@ -378,7 +378,7 @@ def process_video_multi_turn(video_key, video_folder, transcript, client, num_fr
                 'response_type': str(type(raw_response))
             }
 
-    # 构建最终结果
+    
     final_result = {
         'video_id': video_key,
         'status': 'success',
@@ -439,7 +439,7 @@ def process_all_videos(video_frames_dir: str, transcript_json: str, output_file:
     api_key = os.getenv('OPENAI_API_KEY')
     if not api_key:
         # If no environment variable exists, please set your API Key directly here.
-        api_key = "Please replace with your actual API Key"  # 请替换为您的实际API Key
+        api_key = "Please replace with your actual API Key"  
         print("Warning: Please set the OPENAI_API_KEY environment variable or configure the API Key directly within your code.")
 
     client = OpenAI(api_key=api_key)
@@ -587,4 +587,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
