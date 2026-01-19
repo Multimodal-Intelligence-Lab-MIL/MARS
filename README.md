@@ -1,6 +1,6 @@
 # MARS
 
-This repository accompanies the paper *“Training-Free and Interpretable Hateful Video Detection via Multi-Stage Adversarial Reasoning (MARS)”*.
+This repository accompanies the paper *“Training-Free and Interpretable Hateful Video Detection via Multi-Stage Adversarial Reasoning (MARS)”* (ICASSP 2026).
 
 
 ## Datasets
